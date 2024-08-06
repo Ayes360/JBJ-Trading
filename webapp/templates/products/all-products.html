@@ -1,0 +1,248 @@
+{% extends "layout.html" %}
+
+{% set title = "Login" %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="f5">All Products</h1>
+        <ul class="pagination pagination-sm" >
+            <li class="page-item active" aria-current="page"><a class="page-link" href="/all-products">All Products</a></li>
+            <li class="page-item"><a class="page-link" href="/create-new-product">Create New Products</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-12 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="d-flex justify-content-between py-3 bg-white  mb-3">
+                <div class="align-items-center">
+        
+                    <div class="d-flex gap-3">
+                        <div class="input-group align-content-center ">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="input-group align-content-center">
+                            <select class="form-select w-100">
+                                <option>Filter</option>
+                            </select>
+                            </div>
+        
+                            <div class="input-group align-content-center">
+                            <input type="text" class="form-control" placeholder="Active filter">
+                            <span class="input-group-text"><i class="fas fa-xmark"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center gap-3">
+                        <button class="btn excel-btn">Export to Excel</button>
+               
+                </div>
+                </div>
+            <div class="d-flex justify-content-between align-items-center ">
+            </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px; overflow-x:scroll;">
+                    <thead class="bg-light">
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Product Name</th>
+                        <th>Unit</th>
+                        <th>Basic Price</th>
+                        <th>Disc 1</th>
+                        <th>Disc 2</th>
+                        <th>Disc 3</th>
+                        <th>Net Price</th>
+                        <th>Stock on Hand</th>
+                        <th>Supplier</th>
+                        <th>Last Delivery</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+    
+                    <tr class="row-color">
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+                    <tr>
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+    
+                    <tr class="row-color">
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+                    <tr>
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+    
+                    <tr class="row-color">
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+                    <tr>
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+    
+                    <tr class="row-color">
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+                    <tr>
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+    
+                    <tr class="row-color">
+                        <td>app</td>
+                        <td>cement</td>
+                        <td>Apo Type IP Cement</td>
+                        <td>bgs</td>
+                        <td>200</td>
+                        <td>10%</td>
+                        <td>5%</td>
+                        <td>3%</td>
+                        <td>180</td>
+                        <td>500</td>
+                        <td>Apo</td>
+                        <td>04/02/24</td>
+                        <td> <a href="#" class="link-primary">VIEW</a> | <a href="#" class="link-danger">DELETE</a>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <small class="text-muted">
+                    Showing 1 of 10 of 7 Entries
+                </small>
+                <ul class="pagination pagination-sm  justify-content-center m-0">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

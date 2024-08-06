@@ -1,0 +1,218 @@
+{% extends "layout.html" %}
+
+{% set title = "Login" %}
+
+{% block content %}
+
+
+<div class="row mb-3">
+
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="row">
+                <h4 class="fw-bold p-3">Invoice Details</h5>
+                <h5 class="fw-bold p-3">Order Update</h5>
+                 <ul class="vertical-bar">
+                    <li>
+                        <div class="circle"><i class="fa fa-check"></i></div> <!-- Example icon: home -->
+                        <div class="content">
+                            <h5>Paid</h5>
+                            <p>Feb 2, 2024, Check</p>
+                        </div>
+                    </li>
+              
+                    <li>
+                        <div class="circle"><i class="fa fa-clipboard"></i></div> <!-- Example icon: settings -->
+                        <div class="content">
+                            <h5>Order Received</h5>
+                            <p>Feb 2, 2024, Warehouse 1</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div class="col-12 col-md-6 col-lg-9 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Supplier Name</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Delivered at</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Warehouse 1">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Term</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="60 Days">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Invoice Date</h3>
+                        <div class="d-flex">
+                            <input type="date" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Select">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Invoice No</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Warehouse 1">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <table class="table" style="font-size: 12px; overflow-x:scroll;">
+                                <tr class="bg-light">
+                                    <th>Qty</th>
+                                    <th>Unit</th>
+                                    <th>Product Name</th>
+                                    <th>Unit</th>
+                                    <th>Base</th>
+                                    <th>Disc 1</th>
+                                    <th>Disc 2</th>
+                                    <th>Disc 3</th>
+                                    <th>Net Price</th>
+                                    <th>Amount</th>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td>Cement</td>
+                                    <td>Apo Type 1P</td>
+                                    <td>bgs</td>
+                                    <td>200</td>
+                                    <td>10%</td>
+                                    <td>5%</td>
+                                    <td>3%</td>
+                                    <td>180</td>
+                                    <td>250</td>
+                                </tr>
+                             
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row"> 
+                    <div class="col-md-4  mb-3">
+                        <div class="d-flex justify-content-between">
+                            <b>Total Amount Due</b>
+                            <b class="text-muted">PHP 12,345.00</b>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between gap-1">
+                            <a href="#" class="btn btn-primary flex-grow-1" style="font-size: 12px;">Close</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            
+</div>
+
+{% endblock %}

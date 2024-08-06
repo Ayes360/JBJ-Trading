@@ -1,0 +1,137 @@
+
+.sidebar {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #1e293b;
+    overflow-x: hidden;
+    transition: 0;
+    padding-top: 30px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Sidebar links */
+.sidebar a {
+    padding: 8px 13px;
+    margin: 5px 0px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Close button position */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 12px;
+    margin-left: 25px;
+}
+.active
+{
+    background-color: #354051 !important;
+    border-radius: 5px;
+}
+.sidebar-item li
+{
+    display: block;
+    position: relative;
+}
+.sidebar-item a
+{
+    position: relative;
+    font-size: 12px;
+}
+.sidebar-item a:hover
+{
+    background-color: #354051;
+    border-radius: 5px;
+}
+.sidebar-item i
+{
+    color: #e4eef7;
+    margin: 0px 13px 0px 0px;
+    font-size: 13.9px;
+}
+.sidebar-item span
+{
+    color: #F1F5F9;
+    font-size: 12px;
+}
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF !important;
+    font-size: 17.9px !important;
+    font-weight: 200;
+    margin-left: 12px !important;
+}
+
+/* The main content */
+
+
+/* Style the open button */
+.openbtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Open button on hover */
+
+/*New Css*/
+
+body
+{
+    font-family: Inter;
+}
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+ul{
+    padding: 10px;
+}
+.wrapper {
+    display: flex;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}

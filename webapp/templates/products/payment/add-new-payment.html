@@ -1,0 +1,357 @@
+{% extends "layout.html" %}
+
+{% set title = "Login" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="f5">Add New Payment</h1>
+        <ul class="pagination pagination-sm">
+            <li class="page-item" aria-current="page"><a class="page-link" href="/payment/all-payments">All Payments</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="/payment/add-new-payment">Add New Payment</a></li>
+
+        </ul>
+    </div>
+</div>
+
+<!-- <div class="row">
+
+    <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-8">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="form-group mb-3">
+                            <h3 class="fs-6">Supplier Name</h3>
+                            <select class="form-select w-100">
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="d-flex justify-content-between align-content-center gap-2">
+                            <div class="flex-grow-1 mb-3">
+                                <h3 class="fs-6">Invoices to pay</h3>
+                                <select class="form-select w-100">
+                                    <option>Select Invoice</option>
+                                </select>
+                            </div>
+                            <a href="#" class="btn btn-primary ms-auto mb-3 d-block align-self-end">Add</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="form-group mb-3">
+                            <h3 class="fs-6">Collection Date</h3>
+                            <div class="d-flex">
+                                <input type="date" class="form-control" aria-label="Text input with dropdown button"
+                                    placeholder="Select">
+                            </div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <h3 class="fs-6">SOA No</h3>
+                            <div class="d-flex">
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                    placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <table class="table table-bordered" style="font-size: 12px; overflow-x:scroll;">
+                            <thead class="bg-light">
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Invoice No</th>
+                                    <th>Supplier Name</th>
+                                    <th>Amount</th>
+                                    <th>Terms</th>
+                                    <th>Due Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+                                </tr>
+
+                                <tr class="row-color">
+
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+                                </tr>
+                                <tr>
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+                                </tr>
+
+                                <tr class="row-color">
+
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+                                </tr>
+
+                                <tr class="row-color">
+
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+
+                                </tr>
+                                <tr>
+                                    <td>2022-01-23</td>
+                                    <td>IN/1001/123</td>
+                                    <td>John Doe Ltd.</td>
+                                    <td>$1,29.00</td>
+                                    <td>60 Days</td>
+                                    <td>2022-01-24</td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 justify-content-between align-content-center">
+                <h3 class="fs-5 mb-4">Payment ID</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="form-group mb-4">
+                            <h3 class="fs-6">Collection Date</h3>
+                            <select class="form-select w-100">
+                                <option>2022-01-23</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <h3 class="fs-6">Mode of Payment</h3>
+                            <select class="form-select w-100">
+                                <option>Check</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <h3 class="fs-6">Bank</h3>
+                            <select class="form-select w-100">
+                                <option>BDO</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <h3 class="fs-6">Check No</h3>
+                            <input type="text" placeholder="1234" class="form-control">
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <h3 class="fs-6">Amount</h3>
+                            <input type="text" placeholder="$12,90,00" class="form-control">
+                        </div>
+
+                        <a href="#" class="btn btn-primary ms-auto mb-3 d-block align-self-end">Submit</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+        </div> -->
+
+        <div class="row">
+            <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+                <div class="row">
+                    <!-- Left Column -->
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <h3 class="fs-5 mb-4">New Payment</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <h3 class="fs-6">Supplier Name</h3>
+                                    <select class="form-select w-100">
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-2">
+                                    <div class="flex-grow-1 mb-3">
+                                        <h3 class="fs-6">Invoices to pay</h3>
+                                        <select class="form-select w-100">
+                                            <option>Select Invoice</option>
+                                        </select>
+                                    </div>
+                                    <a href="#" class="btn btn-primary mb-3 d-block align-self-end">Add</a>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <h3 class="fs-6">Collection Date</h3>
+                                    <input type="date" class="form-control" placeholder="Select">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <h3 class="fs-6">SOA No</h3>
+                                    <input type="text" class="form-control" placeholder="123">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" style="font-size: 12px;">
+                                        <thead class="bg-light">
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Invoice No</th>
+                                                <th>Supplier Name</th>
+                                                <th>Amount</th>
+                                                <th>Terms</th>
+                                                <th>Due Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                            <tr class="row-color">
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                            <tr class="row-color">
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                            <tr class="row-color">
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2022-01-23</td>
+                                                <td>IN/1001/123</td>
+                                                <td>John Doe Ltd.</td>
+                                                <td>$1,29.00</td>
+                                                <td>60 Days</td>
+                                                <td>2022-01-24</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4 mt-4">
+                                <div class="d-flex justify-content-between align-content-center">
+                                    <b>Total Amount Due</b>
+                                    <b class="text-muted">PHP 12,345.00</b>
+                                </div>
+                                <hr>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <h3 class="fs-5 mb-4">Payment ID</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group mb-4">
+                                    <h3 class="fs-6">Collection Date</h3>
+                                    <select class="form-select w-100">
+                                        <option>2022-01-23</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <h3 class="fs-6">Mode of Payment</h3>
+                                    <select class="form-select w-100">
+                                        <option>Check</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <h3 class="fs-6">Bank</h3>
+                                    <select class="form-select w-100">
+                                        <option>BDO</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-4">
+                                    <h3 class="fs-6">Check No</h3>
+                                    <input type="text" placeholder="1234" class="form-control">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <h3 class="fs-6">Amount</h3>
+                                    <input type="text" placeholder="$12,90,00" class="form-control">
+                                </div>
+                                <a href="#" class="btn btn-primary mb-3 d-block mx-auto">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+
+        {% endblock %}

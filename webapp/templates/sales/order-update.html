@@ -1,0 +1,247 @@
+{% extends "layout.html" %}
+
+{% set title = "Login" %}
+
+{% block content %}
+
+
+<div class="row mb-3">
+
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="row">
+                <h5 class="fw-bold p-3">Order Update</h5>
+                 <ul class="vertical-bar">
+                    <li>
+                        <div class="circle"><i class="fa fa-check"></i></div> <!-- Example icon: home -->
+                        <div class="content">
+                            <h5>Completed</h5>
+                            <p>Feb 2, 2024, Bodega 1</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle"><i class="fa fa-list"></i></div> <!-- Example icon: search -->
+                        <div class="content">
+                            <h5> Partial Pick Up</h5>
+                            <p>Feb 2, 2024, Bodega 1</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle"><i class=" fa fa-solid fa-print"></i></div> <!-- Example icon: settings -->
+                        <div class="content">
+                            <h5>Issue Bodega Out</h5>
+                            <p>Feb 2, 2024, Bodega 1</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="circle"><i class="fa fa-clipboard"></i></div> <!-- Example icon: settings -->
+                        <div class="content">
+                            <h5>Order Placed</h5>
+                            <p>Feb 2, 2024, Bodega 1</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div class="col-12 col-md-6 col-lg-9 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Customer Details</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Select">
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+
+                        <input type="text" class="form-control" placeholder="Address" aria-label="Address"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Date</h3>
+                        <div class="d-flex">
+                            <input type="date" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Select">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">DR No</h3>
+                        <div class="d-flex">
+                            <input type="date" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Select">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">BSO No</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Select">
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div>
+                            <small class="fw-bold">Payment Mode</small>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="checkbox1" name="payment-method" checked>
+                                <label class="form-check-label" for="checkbox1">
+                                    Paid
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="checkbox2" name="payment-method">
+                                <label class="form-check-label" for="checkbox2">
+                                    Terms
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div>
+                            <small class="fw-bold">Shipping method</small>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="checkbox1" name="shipping-method" checked>
+                                <label class="form-check-label" for="checkbox1">
+                                    Pick Up
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="checkbox2" name="shipping-method">
+                                <label class="form-check-label" for="checkbox2">
+                                    Deliver
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <table class="table" style="font-size: 12px; overflow-x:scroll;">
+                                <tr class="bg-light">
+                                    <th>Product</th>
+                                    <th>Qty</th>
+                                    <th>Unit</th>
+                                    <th>Product Description</th>
+                                    <th>Price</th>
+                                    <th>Amount</th>
+                                    <th>Location</th>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                                <tr>
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                
+                                <tr class="row-color">
+                                    <td>app</td>
+                                    <td></td>
+                                    <td>bgs</td>
+                                    <td>RSB 10mm x 6m</td>
+                                    <td>365</td>
+                                    <td></td>
+                                    <td>Bodega</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <textarea class="form-control" id="validationTextarea" placeholder="Notes:" rows="5" required style="resize: none;"></textarea>
+                            <div class="invalid-feedback">
+                              Please enter a message in the textarea.
+                            </div>
+                          </div>
+                    </div>
+                   
+                    <div class="col-md-4">
+                        <div class="d-flex justify-content-between">
+                            <b>Total Sales</b>
+                            <b class="text-muted">PHP 12,345.00</b>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between gap-1">
+                            <a href="#" class="btn btn-light border border-gray border-1 flex-grow-1" style="font-size: 12px;">Save as Draft</a>
+                            <a href="#" class="btn btn-primary flex-grow-1" style="font-size: 12px;">Create New Order</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+            
+</div>
+
+{% endblock %}

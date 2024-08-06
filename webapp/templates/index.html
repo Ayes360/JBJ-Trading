@@ -1,0 +1,458 @@
+{% extends "layout.html" %}
+
+{% set title = "Dashboard" %}
+
+{% block content %}
+<div class="row g-3 ">
+    <div class="col-12 col-md-6 col-lg-3 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <!--Table heading Complete-->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-3 ">
+                    <!-- <i class="fa-solid fa-clipboard-check text-color-green fs-6 ms-2"></i> -->
+                     <div class="fs-6 ms-2"><i class="fa-regular fa-square-check text-color-green"></i></div>                       
+                    <div>
+                        <small class="d-block fs-6 text-color-green">Completed</small>
+                    </div>
+                    <small class="d-block  text-muted" style="font-size: 11px;">731 Orders</small>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-right text-muted"></i>
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-color-green" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>DR No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-3 ">
+                    <i class="fa-solid fa-hourglass-end text-color-blue fs-6 ms-2"></i>
+                     <div>
+                        <small class="d-block text-color-blue fs-6">Waiting</small>
+                    </div>
+                    <small class="d-block text-muted" style="font-size: 11px;">5 Orders</small>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-arrow-right text-muted"></i>
+                </div>
+                
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-color-blue" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>DR No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-3 ">
+                    <i class="fa-solid fa-clipboard-list text-color-orange fs-6  ms-2"></i>
+                    <div>
+                        <small class="d-block text-color-orange fs-6 ">Partial Released</small>
+                    </div>
+                    <small class="d-block text-muted" style="font-size: 11px;">45 Orders</small>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-arrow-right text-muted"></i>
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-color-orange" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>DR No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center gap-3 ">
+
+                    <i class="fa-solid fa-trash text-color-pink fs-6 ms-2"></i>
+                    <div>
+                        <small class="d-block text-color-pink fs-6">Cancelled</small>
+                    </div>
+                    <small class="d-block text-muted" style="font-size: 11px;">5 Orders</small>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-arrow-right text-muted"></i>
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-color-pink" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>DR No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>453627</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row g-3 mt-3">
+
+    <div class="col-12 col-md-6  p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3">
+            <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+                <div>
+                    <small class="d-block fs-6  fw-bold">Recent Orders</small>
+                </div>
+                <div style="font-size: 13px;">
+                    <a href="#">View All</a> | <a href="#">Create New</a>
+                </div>
+            </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Customer Name</th>
+                            <th>DR No</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Created by</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-complete">Complete</span></td>
+                            <td>User 1</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-waiting">Waiting</span></td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-partial">Partial</span></td>
+                            <td>User 2</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-complete">Complete</span></td>
+                            <td>User 1</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-cancel">Cancelled</span></td>
+                            <td>User 1</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-complete">Complete</span></td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>45,3627</td>
+                            <td><span class="status status-cancel">Cancelled</span></td>
+                            <td>User 1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted" style="font-size: 11px;">
+                    Showing 1 of 10 of 7 Entries
+                </small>
+                <ul class="pagination pagination-xs justify-content-center m-0">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6  p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3">
+            <div class="justify-content-between align-items-center ">
+                <div class="d-flex align-items-center justify-content-between gap-3 mb-3">
+                    <div>
+                        <small class="d-block fs-6  fw-bold">Recently Released Items</small>
+                    </div>
+                    <div style="font-size: 13px;">
+                        <a href="#">View All</a> | <a href="#">Create New</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Date</th>
+                            <th>Customer Name</th>
+                            <th>BSO No</th>
+                            <th>QTY</th>
+                            <th>Unit</th>
+                            <th>Product</th>
+                            <th>Released by</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                        <tr>
+                            <td>20/01/2022</td>
+                            <td>Aremar</td>
+                            <td>1234</td>
+                            <td>56</td>
+                            <td>bgs</td>
+                            <td>Apo Type IP Cement</td>
+                            <td>User 3</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <small class="text-muted" style="font-size: 11px;">
+                    Showing 1 of 10 of 7 Entries
+                </small>
+                <ul class="pagination pagination-xs justify-content-center m-0">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

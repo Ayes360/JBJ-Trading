@@ -1,0 +1,168 @@
+{% extends "layout.html" %}
+
+{% set title = "Login" %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="f5"> Supplier</h1>
+        <ul class="pagination pagination-sm">
+            <li class="page-item active" aria-current="page"><a class="page-link" href="/supplier/new-supplier">All
+                    Supplier</a></li>
+            <li class="page-item"><a class="page-link" href="/supplier/add-new-supplier">Add New Supplier</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-12 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="d-flex justify-content-between py-3 bg-white  mb-3">
+                <div class="align-items-center">
+
+                    <div class="d-flex gap-3">
+                        <div class="input-group align-content-center ">
+                            <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="input-group align-content-center">
+                            <select class="form-select w-100">
+                                <option>Filter</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group align-content-center">
+                            <input type="text" class="form-control" placeholder="Active filter">
+                            <span class="input-group-text"><i class="fas fa-xmark"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn excel-btn">Export to Excel</button>
+
+                </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center ">
+            </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px; overflow-x:scroll;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Supplier Name</th>
+                            <th>Running Balance</th>
+                            <th>Address</th>
+                            <th>Contact Person</th>
+                            <th>Contact Number</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+
+                        <tr class="row-color">
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+                        <tr>
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+
+                        <tr class="row-color">
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+                        <tr>
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+
+                        <tr class="row-color">
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+                        <tr>
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+
+                        <tr class="row-color">
+                            <td>Company Name</td>
+                            <td>$2,350.00</td>
+                            <td>Terms</td>
+                            <td>User Name</td>
+                            <td>Pick Up</td>
+                            <td>Complete</td>
+                            <td> <a href="#" class="link-primary">EDIT</a> | <a href="#" class="link-danger">DELETE</a>
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <small class="text-muted">
+                    Showing 1 of 10 of 7 Entries
+                </small>
+                <ul class="pagination pagination-sm  justify-content-center m-0">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

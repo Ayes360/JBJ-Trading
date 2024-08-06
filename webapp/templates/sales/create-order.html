@@ -1,0 +1,312 @@
+{% extends "layout.html" %}
+
+{% set title = "Login" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="f5">Create Order</h1>
+        <ul class="pagination  pagination-sm justify-content-center m-0">
+            <li class="page-item active fs-6" aria-current="page"><a class="page-link" href="/create-order">New
+                    Order</a></li>
+            <li class="page-item "><a class="page-link" href="/drafts">Drafts</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row g-3">
+    <div class="col-12 col-md-6 col-lg-4 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="d-flex justify-content-between align-items-center ">
+                <div class="input-group align-content-center mb-3">
+                    <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+            </div>
+            <div>
+                <table class="table table-bordered" style="font-size: 12px;">
+                    <thead class="bg-light">
+                        <tr>
+                            <th>Product Description</th>
+                            <th>Unit</th>
+                            <th>Available</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                        <tr>
+                            <td>RSB 10mm x 6mm</td>
+                            <td>bgs</td>
+                            <td>340</td>
+                            <td class="link-success"><a href="#">Add</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-8 p-1">
+        <div class="bg-white rounded rounded-3 overflow-hidden shadow-sm p-3 pb-0">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Customer Name</h3>
+                        <select class="form-select w-100">
+                            <option>Select Invoice</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Address</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Address">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">Date</h3>
+                        <div class="d-flex">
+                            <input type="date" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Select">
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <h3 class="fs-6">DR No</h3>
+                        <div class="d-flex">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="123">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-2">
+                    <div>
+                        <small class="fw-bold">Payment method</small>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="checkbox1" name="payment-method"
+                                checked>
+                            <label class="form-check-label" for="checkbox1">
+                                Paid
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="checkbox2" name="payment-method">
+                            <label class="form-check-label" for="checkbox2">
+                                Terms
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div>
+                        <small class="fw-bold">Shipping method</small>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="checkbox1" name="shipping-method"
+                                checked>
+                            <label class="form-check-label" for="checkbox1">
+                                Pick Up
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" value="" id="checkbox2" name="shipping-method">
+                            <label class="form-check-label" for="checkbox2">
+                                Deliver
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <table class="table table-bordered" style="font-size: 12px; overflow-x:scroll;">
+                            <thead class="bg-light">
+                                <tr class="bg-light">
+                                    <th>ID</th>
+                                    <th>Qty</th>
+                                    <th>Uni</th>
+                                    <th>Product Description</th>
+                                    <th>Price</th>
+                                    <th>Amount</th>
+                                    <th>Prev Order</th>
+                                    <th>Location</th>
+                                    <th>Available</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+
+                                <tr class="row-color">
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+
+                                <tr class="row-color">
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+
+                                <tr class="row-color">
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+
+                                <tr class="row-color">
+                                    <td>10</td>
+                                    <td>150</td>
+                                    <td>bgs</td>
+                                    <td>Apo Cement</td>
+                                    <td>250</td>
+                                    <td></td>
+                                    <td>Feb 28,</td>
+                                    <td>Bodge</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="validationTextarea" placeholder="Notes:" rows="4" required
+                            style="resize: none;"></textarea>
+                        <div class="invalid-feedback">
+                            Please enter a message in the textarea.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-between">
+                        <b>Total Sales</b>
+                        <b class="text-muted">PHP 12,345.00</b>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between gap-1">
+                        <a href="#" class="btn btn-light border border-gray border-1 flex-grow-1">Save as Draft</a>
+                        <a href="#" class="btn btn-primary flex-grow-1">Reset</a>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column gap-3">
+                    <a href="#" class="btn btn-light border border-gray border-1">Submit
+                        Order</a>
+                    <a href="#" class="btn btn-primary">Create BSO</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+{% endblock %}

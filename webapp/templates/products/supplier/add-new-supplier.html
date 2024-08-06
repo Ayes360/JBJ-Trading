@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% set title = "Add New Supplier" %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="f5">All Supplier</h1>
+        <ul class="pagination pagination-sm">
+            <li class="page-item"><a class="page-link" href="/supplier/new-supplier">All Supplier</a></li>
+            <li class="page-item active"><a class="page-link" href="/supplier/add-new-supplier">Add New Supplier</a></li>
+        </ul>
+    </div>
+</div>
+<div class="d-flex justify-content-center">
+    <div class="col-md-6 p-1">
+
+
+        <div class="bg-white rounded rounded-3 shadow-sm p-4 form-container">
+            <div class="col-lg-12 mb-4">
+                <h4 class="mb-3">Supplier Information</h4>
+                <div class="form-group mb-3">
+                    <h5 class="fs-6">Company Name</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="CEMEX">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <h5 class="fs-6">Address</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Sorsogon City">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <h5 class="fs-6">Contact Person</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="User">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <h5 class="fs-6">Phone Number</h5>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="1234">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <h5 class="fs-6">Email</h5>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="abc@gmail.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mb-4">
+                <div class="d-flex gap-3 flex-wrap justify-content-between align-items-center">
+                    <div class="form-group">
+                        <h5 class="fs-6">Default Terms</h5>
+                        <select class="form-select">
+                            <option>60 Days</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" class="form-control excel-btn" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
